@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #583722;
+}
+.container {
+  width: 400px;
+  min-height: 500px;
+  padding: 20px;
+  background-color: #bdd7de;
+  border-radius: 15px;
+  box-shadow: 2px 2px 15px rgba(189, 215, 222, 0.7);
+  text-align: center;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+input {
+  width: 280px;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #583722;
+  font-family: inherit;
+  background-color: hsl(193, 33%, 95%);
+  box-shadow: 0.5px 0.5px 5px #583722;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #583722;
+  font-family: inherit;
+  background-color: hsl(193, 33%, 95%);
+  box-shadow: 0.5px 0.5px 5px #583722;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+button:hover {
+  background-color: #583722;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #583722;
+}
+#weatherIcon {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+#temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+#cityName {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.weather-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 10px;
+}
+.weather-detail {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+#description {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+    min-height: 500px;
+    padding: 15px;
+  }
+
+  .search-box {
+    gap: 8px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 8px 10px;
+  }
+
+  #temperature {
+    font-size: 2.5rem;
+  }
+
+  #cityName {
+    font-size: 1.5rem;
+  }
+}
